@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* important to spacement */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin-top: 80px;
+}
+
+.emphasis {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1.emphasis {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+h3.emphasis {
+    margin-top: 24px;
+}
+
+h2.emphasis {
+    margin-bottom: 32px;
+}
+
+/* hero section */
+.hero {
+    background: #FFB6C1; /* pink color */
+    color: #FFFFFF;
+    padding: 120px;
+    text-align: center;
+    display: flex; /* Flexbox   */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sections Organization  */
+.wrapper {
+    display: flex; /* Flexbox  */
+    justify-content: space-between; /* Space between */
+    flex-wrap: wrap; /* adjust items when lines are broken */
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+}
+
+.content {
+    border: 1px solid #FF69B4; /* pink collor */
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    background-color: #FFF0F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* smooth effect */
+}
+
+.content h2 {
+    display: inline;
+}
+
+/* hover effect*/
+.content:hover {
+    transform: scale(1.05); /* mouse effect*/
+    border-color: #FF1493; /* change border collor*/
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        width: 100%; /* full size screen*/
+    }
+}
+
+.about {
+    padding: 60px 40px;
+    border-bottom: 1px solid #FF69B4;
+    margin-bottom: 60px;
+    background-color: #FFF0F5;
+}
